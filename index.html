@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>My portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=display-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Contact Us</a></li>
+        </ul>
+     </nav>
+ <div class="container">
+ 	 <div class="intro">
+	     <img class="profile-picture" src="image/profile-picture.png"/>
+	     <h1>Ghislain N. Djimrabaye</h1>
+	     <h3>Software Engineer and Founder at MagicBrain</h3>
+	     <p>({unrivaled creativity is just the beginning})</p>
+     </div>
+     <hr/>
+
+   <div class="about-grid">
+   	   <div class="i-am">
+	       <h3>I am</h3>
+	       <ul class="about-list">
+		      <li>An engineer</li>
+		      <li>A reader</li>
+		      <li>An hobby cook</li>
+	       </ul>
+       </div>
+   	
+       <div class="i-like">
+	       <h3>I like to</h3>
+	       <ul class="about-list">
+		      <li>Meet new people</li>
+		      <li>Play basketball</li>
+		      <li>Eat Icecream</li>
+	       </ul>
+       </div>
+   </div>
+   <hr/>
+
+
+   <div>
+       <h3 class="projects-heading">Our Services</h3>
+       <div class="projects-grid">
+       	   <div class="project-image-wrapper">
+       	       <img class="project-image" src="image/project-1.jpg"/>
+       	       <h4>Web Development</h4>
+       	   </div>
+       	   <div class="project-image-wrapper">
+       	       <img class="project-image" src="image/project-2.jpg"/>
+       	       <h4>UX Design</h4>
+       	   </div>
+       	   <div class="project-image-wrapper">
+       	       <img class="project-image" src="image/project-3.png"/>
+       	       <h4>Data Science</h4>
+       	   </div>
+       	   <div class="project-image-wrapper">
+       	       <img class="project-image" src="image/project-4.jpg"/>
+       	       <h4>3D Printing</h4>
+       	   </div>
+       	   
+       </div> 
+       
+   </div>
+   <hr/>
+
+       <header>
+                       <h2>This is a video section</h2>
+                 </header>
+                 <p>
+                        <div class="project-video-wrapper">
+                            <video class="project-video" src="video/videoproject.mkv" controls autoplay loop></video>
+                            <p>This video will work in Mozilla Firefox or Google Chrome only. </p>
+                        </div>
+                 </video></p>   <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault(); onFormSubmit()">
+        
+                            <div>
+                                <label for="code">Service </label>
+                                <input type="text" name="code" id="code">
+                            </div>
+                            <div>
+                                <label for="fullname">Specification <label class="validation-error hide"  id="fullNameValidationError" ></label> </label>
+                                <input type="text" name="fullname" id="fullname">
+                            </div>                  
+                            <div>
+                                <label for="gender">Deadline</label>
+                                <input type="date" name="gender" id="gender">
+                            </div>
+                            <div>
+                                <label for="adress">Address</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div>
+                                <label for="class">Shipping</label>
+                                <input type="text" name="class" id="class">
+                            </div>
+                            <div>
+                                <label for="school">Payment Option</label>
+                                <input type="text" name="school" id="school">
+                            </div>
+                            <div>
+                                <input class="form-action-buttons submit" type="submit" value="Submit">
+                            </div>
+                            
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="emplist">
+                            <thead>
+                                <tr>
+                                    <td class="thead">Service</td>
+                                    <td class="thead">Specification</td>
+                                    <td class="thead">Deadline</td>
+                                    <td class="thead">Address</td>
+                                    <td class="thead">Shipping</td>
+                                    <td class="thead">Payment Option</td>
+                                    <td class="thead">Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+        
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    
+    <script src="assets/js/script.js"></script> 
+   <div class="Links-and-contact"> 
+   	   <div class="Links">
+           <h3>Links</h3>
+           <ul class="Links-list">
+              <li>
+                 <a href="https://github.com/<user>">Github</a>
+              </li>
+              <li>
+                 <a href="https://twitter.com<user>">Twitter</a>
+              </li>
+              <li>
+                 <a href="https://www.linkedin.com/in/ing-ghislain-nodjiwam-djimrabaye-198b8681/">Linkedin</a>
+              </li>
+   
+
+           </ul>
+       </div>   
+
+       <div>
+           <form action="#">
+               <label for="email"> 
+                   <h4>Email</h4>
+           	       <input id="email" placeholder="Enter your email">
+               </label>
+               <label for="message">
+                   <h4>Message</h4> 
+                   <textarea id="message">Your Message</textarea>
+               </label>
+               <div class="submit-button-wrapper">
+                  <input type="submit" value="Send Message">
+               </div>
+           </form>
+
+       </div>   
+
+   </div>
+   <script src="script.js"></script>
+
+   
+  
+
+ 
+
+</body>
+</html>
