@@ -1,191 +1,73 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
-
-	<title>My portfolio</title>
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=display-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Agence</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About Us</a></li>
-           <li><a href="#">Contact Us</a></li>
-        </ul>
-     </nav>
- <div class="container">
- 	 <div class="intro">
-	     <img class="profile-picture" src="image/profile-picture.png"/>
-	     <h1>Ghislain N. Djimrabaye</h1>
-	     <h3>Software Engineer and Founder at MagicBrain</h3>
-	     <p>({unrivaled creativity is just the beginning})</p>
-     </div>
-     <hr/>
+    <header>
+        <h1 class="header-title">MagicBrain Service Inquiry</h1>
 
-   <div class="about-grid">
-   	   <div class="i-am">
-	       <h3>I am</h3>
-	       <ul class="about-list">
-		      <li>An engineer</li>
-		      <li>A reader</li>
-		      <li>An hobby cook</li>
-	       </ul>
-       </div>
-   	
-       <div class="i-like">
-	       <h3>I like to</h3>
-	       <ul class="about-list">
-		      <li>Meet new people</li>
-		      <li>Play basketball</li>
-		      <li>Eat Icecream</li>
-	       </ul>
-       </div>
-   </div>
-   <hr/>
-
-
-   <div>
-       <h3 class="projects-heading">Our Services</h3>
-       <div class="projects-grid">
-       	   <div class="project-image-wrapper">
-       	       <img class="project-image" src="image/project-1.jpg"/>
-       	       <h4>Web Development</h4>
-       	   </div>
-       	   <div class="project-image-wrapper">
-       	       <img class="project-image" src="image/project-2.jpg"/>
-       	       <h4>UX Design</h4>
-       	   </div>
-       	   <div class="project-image-wrapper">
-       	       <img class="project-image" src="image/project-3.png"/>
-       	       <h4>Data Science</h4>
-       	   </div>
-       	   <div class="project-image-wrapper">
-       	       <img class="project-image" src="image/project-4.jpg"/>
-       	       <h4>3D Printing</h4>
-       	   </div>
-       	   
-       </div> 
-       
-   </div>
-   <hr/>
-
-       <header>
-                       <h2>This is a video section</h2>
-                 </header>
-                 <p>
-                        <div class="project-video-wrapper">
-                            <video class="project-video" src="video/videoproject.mkv" controls autoplay loop></video>
-                            <p>This video will work in Mozilla Firefox or Google Chrome only. </p>
-                        </div>
-                 </video></p>   <table>
+    </header>
+    <main>
+        <button class="button blue mobile" id="idStudent">New Inquiry</button>
+        <table id="tblStudent" class="records">
+            <thead>
                 <tr>
-                    <td>
-                        <form onsubmit="event.preventDefault(); onFormSubmit()">
-        
-                            <div>
-                                <label for="code">Service </label>
-                                <input type="text" name="code" id="code">
-                            </div>
-                            <div>
-                                <label for="fullname">Specification <label class="validation-error hide"  id="fullNameValidationError" ></label> </label>
-                                <input type="text" name="fullname" id="fullname">
-                            </div>                  
-                            <div>
-                                <label for="gender">Deadline</label>
-                                <input type="date" name="gender" id="gender">
-                            </div>
-                            <div>
-                                <label for="adress">Address</label>
-                                <input type="text" name="address" id="address">
-                            </div>
-                            <div>
-                                <label for="class">Shipping</label>
-                                <input type="text" name="class" id="class">
-                            </div>
-                            <div>
-                                <label for="school">Payment Option</label>
-                                <input type="text" name="school" id="school">
-                            </div>
-                            <div>
-                                <input class="form-action-buttons submit" type="submit" value="Submit">
-                            </div>
-                            
-                        </form>
-                    </td>
-                    <td>
-                        <table class="list" id="emplist">
-                            <thead>
-                                <tr>
-                                    <td class="thead">Service</td>
-                                    <td class="thead">Specification</td>
-                                    <td class="thead">Deadline</td>
-                                    <td class="thead">Address</td>
-                                    <td class="thead">Shipping</td>
-                                    <td class="thead">Payment Option</td>
-                                    <td class="thead">Actions</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-        
-                            </tbody>
-                        </table>
-                    </td>
+                    <td>ID</td>
+                    <td> Name</td>
+                    <td>E-mail Address</td>
+                    <td>Phone</td>
+                    <td>Service</td>
+                    <td>Specific Details</td>
+                    <td>Starting Date</td>
+                    <td>Deadline</td>
+                    <td>Payment Option</td>
                 </tr>
-            </table>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Create new inquiry</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="ID" data-index="new" placeholder="ID" required>
+                    <input type="text" class="model-field" id="Nom_complet" placeholder="Client Name" required>
+                    <input type="email" class="model-field" id="Addresse_Email" placeholder="Client E-mail Address" required>
+                    <input type="tel" class="model-field" id="Tel" placeholder="Client Phone Number" required>
+                    <input type="text" class="model-field" id="Heure_de_depart" placeholder="Service" required>
+                    <input type="text" class="model-field" id="Villes_de_depart_arrivee" placeholder="Specific Details" required>
+                    <input type="date" class="model-field" id="Date_de_reservation" placeholder="Starting Date" required>
+                    <input type="date" class="model-field" id="Mode_de_paiement" placeholder="Deadline" required>
+                    <input type="option" class="model-field" id="Payment_Option" placeholder="Payment Option" required>
+
+                </form>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Save</button>
+                    <button class="button blue" id="cancel">Cancel</button>
+                </footer>
+            </div>
         </div>
-
-    
-    <script src="assets/js/script.js"></script> 
-   <div class="Links-and-contact"> 
-   	   <div class="Links">
-           <h3>Links</h3>
-           <ul class="Links-list">
-              <li>
-                 <a href="https://github.com/<user>">Github</a>
-              </li>
-              <li>
-                 <a href="https://twitter.com<user>">Twitter</a>
-              </li>
-              <li>
-                 <a href="https://www.linkedin.com/in/ing-ghislain-nodjiwam-djimrabaye-198b8681/">Linkedin</a>
-              </li>
-   
-
-           </ul>
-       </div>   
-
-       <div>
-           <form action="#">
-               <label for="email"> 
-                   <h4>Email</h4>
-           	       <input id="email" placeholder="Enter your email">
-               </label>
-               <label for="message">
-                   <h4>Message</h4> 
-                   <textarea id="message">Your Message</textarea>
-               </label>
-               <div class="submit-button-wrapper">
-                  <input type="submit" value="Send Message">
-               </div>
-           </form>
-
-       </div>   
-
-   </div>
-   <script src="script.js"></script>
-
-   
-  
-
- 
-
+    </main>
+    <footer>
+        Copyright &copy; MagicBrain 2022 <br>Ghislain Djimrabaye<br>UX Design Data Science and Web Development<br> Phone: +235 63 64 49 34<br> ghislainndjimrabaye@gmail.com
+        <br>
+    </footer>
 </body>
+
 </html>
